@@ -21,7 +21,6 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlin.random.Random
 
 
-
 @AndroidEntryPoint
 class RegisterFragment : Fragment() {
 
@@ -73,8 +72,10 @@ class RegisterFragment : Fragment() {
         val ageList = (18..60).map { it.toString() }
         val genderList = listOf("Male", "Female")
 
-        val ageAdapter = ArrayAdapter(requireContext(), android.R.layout.simple_dropdown_item_1line, ageList)
-        val genderAdapter = ArrayAdapter(requireContext(), android.R.layout.simple_dropdown_item_1line, genderList)
+        val ageAdapter =
+            ArrayAdapter(requireContext(), android.R.layout.simple_dropdown_item_1line, ageList)
+        val genderAdapter =
+            ArrayAdapter(requireContext(), android.R.layout.simple_dropdown_item_1line, genderList)
 
         (binding.etAge as? AutoCompleteTextView)?.setAdapter(ageAdapter)
         (binding.etGender as? AutoCompleteTextView)?.setAdapter(genderAdapter)
@@ -116,6 +117,7 @@ class RegisterFragment : Fragment() {
                 when {
                     result > 0 -> {
                         showToast("User registered successfully with ID: $result")
+                        clearAllText()
                         findNavController().navigate(R.id.displayAllUsersFragment)
                     }
 
@@ -126,6 +128,13 @@ class RegisterFragment : Fragment() {
                 registerViewModel.resetInsertUserResponse()
             }
         }
+    }
+
+    private fun clearAllText() {
+        binding.etName.text?.clear()
+        binding.etJobtitle.text?.clear()
+        binding.etAge.text?.clear()
+        binding.etGender.text?.clear()
     }
 
     private fun showToast(message: String) {
