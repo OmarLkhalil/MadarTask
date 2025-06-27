@@ -61,14 +61,13 @@
             android:inputType="textNoSuggestions"
             app:layout_constraintTop_toBottomOf="@+id/create_account" />
 
-        <androidx.appcompat.widget.AppCompatEditText
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
             android:id="@+id/et_age"
             style="@style/MadarInputEditTextStyle"
             android:layout_marginTop="@dimen/_14sdp"
             android:hint="@string/please_enter_age"
-            android:inputType="phone"
+            android:inputType="none"
             app:layout_constraintTop_toBottomOf="@+id/et_name" />
-
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/et_jobtitle"
@@ -78,12 +77,14 @@
             android:inputType="textEmailAddress"
             app:layout_constraintTop_toBottomOf="@+id/et_age" />
 
-        <androidx.appcompat.widget.AppCompatEditText
+
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
             android:id="@+id/et_gender"
             style="@style/MadarInputEditTextStyle"
             android:layout_marginTop="@dimen/_14sdp"
             android:hint="@string/please_enter_gender"
-            android:inputType="number"
+            android:inputType="none"
             app:layout_constraintTop_toBottomOf="@+id/et_jobtitle" />
 
         <com.google.android.material.button.MaterialButton

@@ -10,4 +10,8 @@
         android:name="com.omarlkhalil.madartask.views.register.RegisterFragment"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/displayAllUsersFragment"
+        android:name="com.omarlkhalil.madartask.views.display_users.DisplayAllUsersFragment"
+        android:label="DisplayAllUsersFragment" />
 </navigation>

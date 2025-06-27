@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface UsersDao {
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert( onConflict = OnConflictStrategy.REPLACE)
     fun insertUser(user: MadarUser) : Long
 
     @Delete

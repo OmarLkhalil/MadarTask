@@ -10,4 +10,6 @@
     <string name="please_enter_age">Please Enter Age</string>
     <string name="please_enter_jobtitle">Please Enter Your Jobtitle</string>
     <string name="please_enter_gender">Please Enter Your Gender</string>
+    <string name="no_users_found">No Users Found</string>
+    <string name="madarsoft_s_users">Madarsoft\'s Users</string>
 </resources>
