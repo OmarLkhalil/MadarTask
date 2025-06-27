@@ -48,7 +48,7 @@ class UsersViewModel @Inject constructor(
         }
     }
 
-    private val _insertUserResponse = MutableStateFlow<Long>(0)
+    private val _insertUserResponse = MutableStateFlow<Long>(-1)
     val insertUserResponse: StateFlow<Long> = _insertUserResponse.asStateFlow()
 
     fun insertUserToLocalDB(user: MadarUser) {
@@ -69,6 +69,10 @@ class UsersViewModel @Inject constructor(
                 _deleteUserResponse.emit(it)
             }
         }
+    }
+
+    fun resetInsertUserResponse() {
+        _insertUserResponse.value = -1
     }
 
 

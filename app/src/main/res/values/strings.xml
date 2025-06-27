@@ -5,4 +5,9 @@
     <string name="welcome_to_madarsoft_app">Welcome to MadarSoft App</string>
     <string name="create_account">Create Account</string>
     <string name="please_enter_name">PLease Enter Your Name</string>
+    <string name="please_enter_phone">PLease Enter Your Phone</string>
+    <string name="please_enter_email">Please Enter Email</string>
+    <string name="please_enter_age">Please Enter Age</string>
+    <string name="please_enter_jobtitle">Please Enter Your Jobtitle</string>
+    <string name="please_enter_gender">Please Enter Your Gender</string>
 </resources>

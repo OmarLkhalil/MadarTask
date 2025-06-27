@@ -10,7 +10,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/_13sdp">
+        android:paddingHorizontal="@dimen/_13sdp"
+        android:paddingVertical="@dimen/_26sdp">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/iv_logo"
@@ -30,6 +31,7 @@
             android:fontFamily="@font/heavy"
             android:text="@string/welcome_to_madarsoft_app"
             android:textAlignment="center"
+            android:textColor="@color/black"
             android:textSize="@dimen/_16ssp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -44,6 +46,7 @@
             android:fontFamily="@font/semibold"
             android:text="@string/create_account"
             android:textAlignment="center"
+            android:textColor="@color/black"
             android:textSize="@dimen/_14ssp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -53,11 +56,56 @@
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/et_name"
             style="@style/MadarInputEditTextStyle"
+            android:layout_marginTop="@dimen/_14sdp"
             android:hint="@string/please_enter_name"
             android:inputType="textNoSuggestions"
+            app:layout_constraintTop_toBottomOf="@+id/create_account" />
 
-            app:layout_constraintTop_toBottomOf="@+id/create_account"
-            />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_age"
+            style="@style/MadarInputEditTextStyle"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:hint="@string/please_enter_age"
+            android:inputType="phone"
+            app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_jobtitle"
+            style="@style/MadarInputEditTextStyle"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:hint="@string/please_enter_jobtitle"
+            android:inputType="textEmailAddress"
+            app:layout_constraintTop_toBottomOf="@+id/et_age" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_gender"
+            style="@style/MadarInputEditTextStyle"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:hint="@string/please_enter_gender"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@+id/et_jobtitle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_signUp"
+            style="@style/button_primary_r7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_26sdp"
+            android:fontFamily="@font/semibold"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:letterSpacing="0"
+            android:text="@string/create_account"
+            android:textSize="@dimen/_14ssp"
+            app:cornerRadius="@dimen/_6sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_gender" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
