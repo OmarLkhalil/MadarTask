@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#7A3ABF</color>
+    <color name="colorOnPrimary">#E7DCF4</color>
+    <color name="colorPrimaryDark">#754EB9</color>
+    <color name="colorAccent">#EFEFEF</color>
+    <color name="splash_toolbar_color">#4E148C</color>
+    <color name="stroke_color">#1C1C1C1A</color>
+    <color name="date_sheet_bg">#FAFAFA</color>
+    <color name="wifi_on">#4FD477</color>
+    <color name="greenlight">#C7E6D0</color>
+    <color name="green">#53AA00</color>
+    <color name="wifi_off">#E2DDD0</color>
+
+    <color name="background_color">#F9F9F9</color>
+    <color name="colorGrey">#ACA8A8</color>
+    <color name="colorPink">#EA4B9B</color>
+    <color name="colorYellow">#FAC950</color>
+    <color name="colorYellow20">#FDF0D0</color>
+    <color name="colorSingleItemBackground">#a5a5a5</color>
+    <color name="colorButtonDisableBackground">#f5f5f5</color>
+    <color name="colorHint">#4d4c4c</color>
+    <color name="unselected_day">#D5D5D6</color>
+
+
+    <color name="text_hint">#484C52</color>
+    <color name="text_color">#000000</color>
+    <color name="text_red">#C71919</color>
+    <color name="text_red2">#EB0017</color>
+    <color name="red_light">#E4BAC1</color>
+    <color name="text_gold">#C49E58</color>
+    <color name="grey_light">#F9F9F9</color>
+    <color name="gray_mid">#484C52</color>
+    <color name="gray_dark">#484C52</color>
+    <color name="header_date">#020202</color>
+
+    <color name="gray_mid2">#D9D9D9</color>
+    <color name="grey_tv">#909090</color>
+    <color name="grey_dark">#434343</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="icon_color_primary">#4E148C</color>
+    <color name="icon_color_accent">#EFEFEF</color>
+    <color name="icon_color_primary_t">#52754EB9</color>
+    <color name="line_color">#E1E1E1</color>
+    <color name="special">#5D5D5D</color>
+
+
+
+    <color name="colorAccent50">#3EA4CA</color>
+    <color name="colorAccent20">#C8D9DF</color>
+
+
+    <color name="demo_dark_transparent">#4D000000</color>
+</resources>
